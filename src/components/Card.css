@@ -1,0 +1,135 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: left;
+  flex: 1; 
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  min-height: 2.5rem; /* Adjust this value to match your design */
+  display: flex;
+  align-items: center;
+}
+
+.form-select {
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 4rem;
+  background: #fff;
+  border: 2px solid #e66610;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: width 400ms ease-in-out;
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.search-wrapper.active {
+  width: 300px;
+}
+
+.search-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 55px; /* Adjust based on the button size */
+  margin-right: 2px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+  width: calc(100% - 50px); /* Account for button width */
+  height: 100%;
+  transition: width 400ms ease-in-out;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 50%;
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background: #e66610;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-right{
+  display: flex;
+  flex-direction: row;
+}
+
+.collapse{
+  justify-content: space-between !important;
+}
+.search-sec{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav{
+    display: flex;
+    align-items: center;
+  }
+  .nav-right {
+    display: flex; 
+    flex-direction: column;
+    align-items:center ;
+  }
+  
+  .MuiBox-root{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+  }
+  .search-sec{
+    display: block;
+  }
+  .search-prim{
+    display: none;
+  }
+}
